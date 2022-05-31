@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.scss";
+import Facebook from "./assets/Icons/Facebook";
+import Instagram from "./assets/Icons/Instagram";
+import Telegram from "./assets/Icons/Telegram";
+import Models from "./components/Models/Models";
+import Navbar from "./components/Navbar/Navbar";
+import Product from "./components/Product/Product";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Navbar />
+        <div className="main container">
+          <Routes>
+            <Route path="/" element={<Models />}></Route>
+            <Route path="/product/:id" element={<Product />}></Route>
+          </Routes>
+        </div>
+      </BrowserRouter>
+      <div className="footer">
+        <div className="web-pages container">
+          <a href="https://www.facebook.com/" target="_blank">
+            <Facebook />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <Instagram />
+          </a>
+          <a href="https://web.telegram.org/z/" target="_blank">
+            <Telegram />
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  background-color: #484646;
+  min-height: 100vh;
+
+  .main {
+    min-height: calc(100vh - 226.4px);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+.footer {
+  min-height: 100px;
+  background-color: #857e7e;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .web-pages {
+    display: flex;
+    align-items: center;
+
+    a {
+      width: 40px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+}

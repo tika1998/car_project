@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  background-color: #857e7e;
+  align-items: center;
+  padding: 20px 10px;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  .title {
+    margin: auto;
+    text-decoration: none;
+    background: -webkit-linear-gradient(#c4aa94, #fff5e7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+  }
+}
