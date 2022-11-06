@@ -6,8 +6,15 @@ import Telegram from "./assets/Icons/Telegram";
 import Models from "./components/Models/Models";
 import Navbar from "./components/Navbar/Navbar";
 import Product from "./components/Product/Product";
+import ReactGa from "react-ga";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    ReactGa.initialize("UA-141678075-1");
+    ReactGa.pageview("/");
+  }, []);
+
   return (
     <div className="App">
       <BrowserRouter>

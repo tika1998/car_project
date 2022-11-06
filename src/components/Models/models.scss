@@ -2,22 +2,22 @@
   width: 75%;
   margin: auto;
   background-color: #00000036;
+  min-height: 300px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   padding: 10px;
-  min-height: 300px;
+  justify-content: center;
 
   a {
     display: flex;
-    width: 150px;
-    height: 150px;
+    width: 25%;
+    height: auto;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-decoration: none;
     color: white;
-    margin-left: 4%;
 
     p {
       margin: 0 0 10px 0;
@@ -25,8 +25,10 @@
 
     img {
       width: 100%;
+      padding: 10%;
       height: 100%;
       object-fit: contain;
+      box-sizing: border-box;
     }
   }
   a:hover {
@@ -34,8 +36,22 @@
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 769px) {
   .models {
     justify-content: center;
+
+    a {
+      width: 33%;
+    }
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .models {
+    justify-content: center;
+
+    a {
+      width: 50%;
+    }
   }
 }

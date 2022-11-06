@@ -1,4 +1,4 @@
-import { memo } from "react";
+import { memo, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Slider from "react-slick/lib/slider";
 import "slick-carousel/slick/slick.css";
@@ -8,10 +8,17 @@ import "./product.scss";
 import Location from "../../assets/Icons/Location ";
 import Phone from "../../assets/Icons/Phone";
 import Mail from "../../assets/Icons/Mail";
+import ReactGa from "react-ga";
 
 const Product = () => {
   const baseURL = process.env.PUBLIC_URL + "../assets/logo/";
   const { id } = useParams();
+
+  useEffect(() => {
+    ReactGa.initialize("UA-141678075-1");
+    console.log(1);
+    ReactGa.pageview("/product");
+  }, []);
 
   const settings = {
     dots: true,

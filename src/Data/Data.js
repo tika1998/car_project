@@ -29,10 +29,10 @@ export const MODELS = [
   {
     id: 4,
     name: "Hyundai",
-    path: "hyundai1",
+    path: "hyundai",
     description:
       "WE ARE A LOCALLY OWNED AUTOMOTIVE WRECKING YARD LOCATED IN RANCHO CORDOVA, CA. WE SPECIALIZE IN MAZDA, HONDA, ACURA, NISSAN, INFINITI PLEASE CALL US FOR ANY AUTOMOTIVE PART NEED YOU MAY HAVE",
-    img: "hyundai1",
+    img: "hyundai",
     imgs: ["bmw", "ford", "lexus", "infiniti"],
   },
   {
@@ -125,13 +125,6 @@ export const MODELS = [
       "WE ARE A LOCALLY OWNED AUTOMOTIVE WRECKING YARD LOCATED IN RANCHO CORDOVA, CA. WE SPECIALIZE IN MAZDA, HONDA, ACURA, NISSAN, INFINITI PLEASE CALL US FOR ANY AUTOMOTIVE PART NEED YOU MAY HAVE",
     img: "dodge",
   },
-  // {
-  //   id: 17,
-  //   path: "genesis",
-  //   description:
-  //    "WE ARE A LOCALLY OWNED AUTOMOTIVE WRECKING YARD LOCATED IN RANCHO CORDOVA, CA. WE SPECIALIZE IN MAZDA, HONDA, ACURA, NISSAN, INFINITI PLEASE CALL US FOR ANY AUTOMOTIVE PART NEED YOU MAY HAVE", //
-  //   img: "genesis",
-  // },
   {
     id: 18,
     path: "mini",
@@ -193,7 +186,7 @@ export const MODELS = [
     path: "GMC",
     description:
       "WE ARE A LOCALLY OWNED AUTOMOTIVE WRECKING YARD LOCATED IN RANCHO CORDOVA, CA. WE SPECIALIZE IN MAZDA, HONDA, ACURA, NISSAN, INFINITI PLEASE CALL US FOR ANY AUTOMOTIVE PART NEED YOU MAY HAVE",
-    img: "GMC",
+    img: "gmc",
   },
   {
     id: 27,
@@ -228,13 +221,13 @@ export const MODELS = [
     path: "Land-Rover",
     description:
       "WE ARE A LOCALLY OWNED AUTOMOTIVE WRECKING YARD LOCATED IN RANCHO CORDOVA, CA. WE SPECIALIZE IN MAZDA, HONDA, ACURA, NISSAN, INFINITI PLEASE CALL US FOR ANY AUTOMOTIVE PART NEED YOU MAY HAVE",
-    img: "Land-Rover",
+    img: "land-rover",
   },
   {
     id: 32,
     path: "Alfa-Romeo",
     description:
       "WE ARE A LOCALLY OWNED AUTOMOTIVE WRECKING YARD LOCATED IN RANCHO CORDOVA, CA. WE SPECIALIZE IN MAZDA, HONDA, ACURA, NISSAN, INFINITI PLEASE CALL US FOR ANY AUTOMOTIVE PART NEED YOU MAY HAVE",
-    img: "Alfa-Romeo",
+    img: "alfa-romeo",
   },
 ];
